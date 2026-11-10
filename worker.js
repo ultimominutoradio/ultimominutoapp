@@ -123,10 +123,6 @@ return Response.json(
 { status: 405 }
 );
 }
-return Response.json({
-tokenConfigurado: Boolean(env.PUSH_TEST_TOKEN),
-tokenDisponible: typeof env.PUSH_TEST_TOKEN
-});
 if (!env.PUSH_TEST_TOKEN) {
 return Response.json(
 { success: false, error: "Token no configurado" },
