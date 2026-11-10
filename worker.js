@@ -253,9 +253,3 @@ error: "No se pudo completar el envío"
 return env.ASSETS.fetch(request);
 }
 };
-
-
-// Servir la aplicación
-return env.ASSETS.fetch(request);
-}
-};
