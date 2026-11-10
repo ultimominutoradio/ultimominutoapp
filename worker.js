@@ -189,15 +189,14 @@ auth: item.auth
 try {
 const payload = await buildPushPayload(
 {
-data: {
+data: JSON.stringify({
 title: "Último Minuto",
 body: "¡Las notificaciones funcionan! Ya puedes recibir avisos deportivos.",
 url: "/"
-},
+}),
 options: {
 ttl: 60,
-urgency: "high",
-topic: "um-test"
+urgency: "normal"
 }
 },
 subscription,
