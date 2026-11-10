@@ -34,5 +34,14 @@ border: 0;
 src="https://ultimominutoradio.blogspot.com/"
 title="Último Minuto">
 </iframe>
+  <script>
+if ("serviceWorker" in navigator) {
+window.addEventListener("load", () => {
+navigator.serviceWorker.register("/sw.js")
+.then(() => console.log("Último Minuto: aplicación preparada"))
+.catch(error => console.error("Error del service worker:", error));
+});
+}
+</script>
 </body>
 </html>
