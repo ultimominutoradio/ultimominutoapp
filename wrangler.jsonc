@@ -5,5 +5,12 @@
 "assets": {
 "directory": "./",
 "binding": "ASSETS"
+},
+"d1_databases": [
+{
+"binding": "DB",
+"database_name": "ultimo-minuto-db",
+"database_id": "6132e286-77c4-404e-8873-fd2096b5d793"
 }
+]
 }
